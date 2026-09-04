@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Music — Shikhar</title>
+<link rel="stylesheet" href="../css/global.css">
+<link rel="stylesheet" href="../css/music.css">
+</head>
+<body>
+<div class="site">
+<aside class="sidebar">
+  <div class="brand">somethinglikets</div>
+  <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav">
+    <a href="../index.html"><span class="nav-icon">⌂</span>Home</a>
+    <a href="about.html"><span class="nav-icon">♙</span>About</a>
+    <a href="interests.html"><span class="nav-icon">♧</span>Interests</a>
+    <a href="favorites.html"><span class="nav-icon">♡</span>Favorites</a>
+    <a href="memories.html"><span class="nav-icon">▧</span>Memories</a>
+    <a href="timeline.html"><span class="nav-icon">◷</span>Timeline</a>
+    <a href="quotes.html"><span class="nav-icon">“</span>Quotes</a>
+    <a href="music.html" class="active"><span class="nav-icon">♪</span>Music</a>
+  </nav>
+  <div class="side-note">“I don't know where I'm going,<br>but I promise it won't be boring.”</div>
+</aside>
+
+<main class="main">
+<header class="topbar"><span>Music</span><span>✦</span></header>
+
+<section class="page">
+  <header class="heading">
+    <div class="eyebrow">Songs that live in my head rent free.</div>
+    <h1>My Soundtrack</h1>
+    <p>One track for now.</p>
+  </header>
+
+  <div class="music-player card">
+    <div class="music-art">
+      <img src="../assets/images/favorites/lana-portrait.jpg" alt="Supplied Lana Del Rey portrait">
+    </div>
+
+    <div class="music-details">
+      <div class="eyebrow">NOW PLAYING</div>
+      <h2>Diet Mountain Dew</h2>
+      <p>Lana Del Rey — Oxford Remix</p>
+
+      <audio id="player" preload="metadata">
+        <source src="../assets/music/diet-mountain-dew-oxford-remix.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="progress-wrap">
+        <input id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+        <div class="time"><span id="current">0:00</span><span id="duration">0:00</span></div>
+      </div>
+
+      <div class="controls">
+        <button id="back" aria-label="Restart">↶</button>
+        <button id="play" class="play" aria-label="Play">▶</button>
+        <button id="forward" aria-label="Skip forward">↷</button>
+      </div>
+
+      <div class="volume">
+        <span>🔊</span>
+        <input id="volume" type="range" min="0" max="1" value="1" step="0.01" aria-label="Volume">
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">Same chaos, brighter days. <span data-year></span></footer>
+</main>
+</div>
+
+<script src="../js/global.js"></script>
+<script src="../js/navigation.js"></script>
+<script src="../js/music.js"></script>
+</body>
+</html>
